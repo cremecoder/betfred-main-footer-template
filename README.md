@@ -4,6 +4,10 @@ Static HTML and CSS copy of the footer from the [betfred](https://www.betfred.co
 
 <br>
 
+<img src="./assets/betfred-footer.gif">
+
+<br>
+
 ## Running Locally
 
 Install using package manager of choice; I use NPM. This is a local installation only and not hosted live anywhere.
