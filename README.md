@@ -4,7 +4,7 @@ Static HTML and CSS copy of the footer from the [betfred](https://www.betfred.co
 
 <br>
 
-<img src="./assets/betfred-footer.gif">
+![betfred-footer](https://user-images.githubusercontent.com/71640292/165316406-9d7a6678-1b1b-4d65-b796-2837f3cf749d.gif)
 
 <br>
 
