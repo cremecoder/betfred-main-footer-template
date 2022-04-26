@@ -1,0 +1,53 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.sponors-payments {
+  margin-bottom: $section_spacing_bottom;
+
+  &__container {
+    @include container($break-lg);
+    display: flex;
+    flex-direction: column;
+
+    .sponsors {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      div {
+        margin: 10px;
+        img {
+          height: 60px;
+        }
+      }
+    }
+
+    .payments {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      img {
+        margin: 10px;
+        height: 60px;
+      }
+    }
+
+    @include respond(break-xl) {
+      flex-direction: row;
+
+      .sponsors {
+        flex-wrap: nowrap;
+        div {
+          margin: 4px;
+        }
+      }
+
+      .payments {
+        flex-wrap: nowrap;
+        img {
+          margin: 4px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use './variables' as *;
+
+@mixin bg_radial() {
+  background: linear-gradient(
+    0deg,
+    $clr_primary_one,
+    $clr_primary_two 70%,
+    $clr_primary_three
+  );
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == break-sm {
+    @media (min-width: $break-sm) {
+      @content;
+    }
+  }
+  @if $breakpoint == break-md {
+    @media (min-width: $break-md) {
+      @content;
+    }
+  }
+  @if $breakpoint == break-lg {
+    @media (min-width: $break-lg) {
+      @content;
+    }
+  }
+  @if $breakpoint == break-xl {
+    @media (min-width: $break-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin container(
+  $max-width: $break-sm,
+  $text-align: center,
+  $marginYX: 0 auto
+) {
+  max-width: $max-width;
+  text-align: $text-align;
+  margin: $marginYX;
+}

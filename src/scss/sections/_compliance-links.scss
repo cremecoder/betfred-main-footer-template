@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.compliance-links {
+  padding: 1rem;
+  background-color: $clr_grey_light;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: $section_spacing_bottom;
+
+  &__container {
+    @include container($break-md);
+  }
+
+  span {
+    padding: 10px;
+
+    a {
+      color: #444444;
+      font-size: $fz-sm;
+    }
+
+    @include respond(break-md) {
+      padding: 15px;
+    }
+  }
+}

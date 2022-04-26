@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.socials {
+  margin-bottom: $section_spacing_bottom;
+
+  &__container {
+    @include container();
+  }
+
+  &-text {
+    color: $clr_grey_light;
+    font-size: $fz-reg;
+  }
+
+  &-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+    div {
+      height: 40px;
+      width: 40px;
+      margin: 0 5px;
+      a {
+        text-decoration: none;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

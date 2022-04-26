@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.licence-icons {
+  margin-bottom: $section_spacing_bottom;
+
+  &__container {
+    @include container($break-lg + 80px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    img {
+      display: block;
+      width: 45%;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#page {
+  overflow: hidden;
+  font-family: $family;
+}
+
+.footer {
+  @include bg_radial();
+  // margin-top: auto;
+  // width: 100vw;
+  // height: 100vh;
+  // overflow: hidden;
+  padding: 1rem;
+}
